@@ -8,14 +8,7 @@ namespace FizzBuzz
 {
     public class FizzRule : IFizzBuzzRule
     {
-        public string GetOutput(int number)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool IsMatch(int number)
-        {
-            throw new NotImplementedException();
-        }
+        public bool IsMatch(int number) => number % 3 == 0;
+        public string GetOutput(int number) => "Fizz";
     }
 }
