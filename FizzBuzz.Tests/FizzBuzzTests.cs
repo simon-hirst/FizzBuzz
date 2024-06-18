@@ -29,5 +29,12 @@ namespace FizzBuzz.UnitTests
             Assert.IsTrue(rule.IsMatch(15));
             Assert.AreEqual("FizzBuzz", rule.GetOutput(15));
         }
+
+        [Test]
+        public void DefaultRule_ReturnsNumberForNonMultiplesOfThreeOrFive()
+        {
+            var rule = new DefaultRule();
+            Assert.AreEqual("1", rule.GetOutput(1));
+        }
     }
 }
